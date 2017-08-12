@@ -10,7 +10,22 @@ body {
 }
 .col-md-6 {
   float:left;
+  margin-bottom: 15px;
 }
 .button {
   clear: left;
+}
+
+.item-name {
+  float: left;
+  clear: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.devour-button {
+  float: right;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
