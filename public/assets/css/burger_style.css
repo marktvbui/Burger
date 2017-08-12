@@ -11,3 +11,6 @@ body {
 .col-md-6 {
   float:left;
 }
+.button {
+  clear: left;
+}
