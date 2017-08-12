@@ -7,7 +7,7 @@ function printQuestionMarks(num) {
     arr.push('?');
   }
   return arr.toString();
-}
+};
 
 function objToSql(ob) {
   var arr = [];
@@ -18,12 +18,12 @@ function objToSql(ob) {
     }
   }
   return arr.toString();
-}
+};
 
 var orm = {
   all: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
-    connection.query(printQuestionMarks, function(err, result) {
+    connection.query(queryString, function(err, result) {
       if (err) {
         throw err;
       }
