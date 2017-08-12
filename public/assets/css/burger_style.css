@@ -8,3 +8,6 @@
 body {
   background-image: url('../img/food.png');
 }
+.col-md-6 {
+  float:left;
+}

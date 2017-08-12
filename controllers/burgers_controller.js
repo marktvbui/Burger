@@ -13,6 +13,7 @@ router.get('/', function(req, res) {
 });
 
 router.post('/', function(req, res) {
+  console.log(req.body.burger_name);
   burger.create([
     'burger_name'
     ],[
@@ -24,9 +25,9 @@ router.post('/', function(req, res) {
 
 router.put('/:id', function(req, res) {
   var condition = 'id = ' + req.params.id;
-
   console.log('condition ' + condition);
-  burder.update({
+  console.log('req.body.devoured ' + req.body.devoured);
+  burger.update({
     devoured: req.body.devoured
   }, condition, function() {
     res.redirect('/');
